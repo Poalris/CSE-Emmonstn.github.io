@@ -6,6 +6,7 @@ h1 {
     color:#ffa600;
     text-align: center;
 }
+
 a:link, a:visited{
     color: honeydew;
 }
@@ -17,21 +18,38 @@ img {
 }
 div.about {
     color: #ff6361;
-    text-align: justify;
+    text-align: center;
     font-style: oblique;
-    text-indent: 2%;
-}
+    display:flex;
+    flex-wrap:wrap;
+    margin-right: 100px;
+    margin-left: 100px;
+    justify-content: center;
+    }
+
+div.about p {
+    width:50%;
+    text-align: center;
+    margin: auto;
+    line-height: 125%;
+    }
+
+div.about img {
+    width: 150px;
+    height: 200px;
+    border-radius: 25%;
+    border: 2px solid rgb(231, 169, 205);
+    }
+
 div.skills{
     color: #de5a79;
     text-align: justify;
     font-family: Arial, Helvetica, sans-serif;
-    text-indent: 4%;
 }
 div.projectss{
     color: #bc5090;
     text-align: justify ;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-indent: 6%;
 }
 div.projects {
     
@@ -39,7 +57,6 @@ div.projects {
     color: #bc5090;
     text-align: justify ;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-indent: 6%;
 }
 
 .projects { display:flex; flex-wrap:wrap; } /* condensed to save space */
@@ -52,10 +69,14 @@ div.projects {
     border-radius: 15%;
 }
 
+.code {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+
+}
 
 div.contact {
     color: #8a508f;
     text-align: justify;    
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-indent: 8%;
 }
